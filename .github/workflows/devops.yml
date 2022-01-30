@@ -29,3 +29,5 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run ng build --if-present -- --configuration=uat --source-map=false 
+    - name: List Installations
+      run: npm list
